@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<header class="header-block-main">
+		<header class="header-block">
 			<div class="container header-menu">
 				<nav>
 					<a class="logo-header" href="./index.html">WEB<span class="logo-decor-head">STUDIO</span></a>
@@ -363,6 +363,24 @@
 							</ul>
 						</div>
 					</li>
+
+					<li class="footer-form-container">
+					<span class="footer-form-title">Subscribe</span>
+							<form class="footer-form" action="">
+
+								<label class="contact-input-title" for="">
+										
+									<input type="email" required name="User_email" class="footer-form-input" pattern="^[A-zA-Z@.0-9]" placeholder="E-mail"/>
+									
+								</label>
+
+								<button class="footer-form-button" type="submit">Subscribe</button>
+
+							</form>
+
+						
+					</li>
+
 				</ul>
 			</div>
 		</footer>
@@ -373,6 +391,74 @@
 						<use href="./images/icons.svg#icon-modal-close"></use>
 					</svg>
 				</button>
+				<div class="contact-form-title">Leave your contacts and we will call you back</div>
+
+				<form class="contact-form">
+					<label class="contact-input-title" for="">
+						<span class="contact-input-title-item">Name</span>
+						<span class="contact-form-input-wrap">
+							<input
+								type="text"
+								required
+								name="User_name"
+								class="contact-form-input"
+								minlength="2"
+								pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+							/>
+
+							<span class="contact-form-span">
+								<svg class="contact-form-icon">
+									<use class="contact-form-icon-item" href="./images/icons.svg#icon-person-icon"></use>
+								</svg>
+							</span>
+						</span>
+					</label>
+					<label class="contact-input-title" for="">
+						<span class="contact-input-title-item">Phone</span>
+						<span class="contact-form-input-wrap">
+						<input type="tel" required name="User_phone" class="contact-form-input" pattern="[0-9]" />
+						<span class="contact-form-span">
+							<svg class="contact-form-icon">
+								<use class="contact-form-icon-item" href="./images/icons.svg#icon-phone-icon"></use>
+							</svg>
+						</span>
+					</label>
+
+					<label class="contact-input-title" for="">
+						<span class="contact-input-title-item">Email</span>
+						<span class="contact-form-input-wrap">
+						<input type="email" required name="User_email" class="contact-form-input" />
+						<span class="contact-form-span">
+							<svg class="contact-form-icon">
+								<use class="contact-form-icon-item" href="./images/icons.svg#icon-email-icon"></use>
+							</svg>
+						</span>
+					</span>
+					</label>
+
+
+					<label class="contact-input-title" for="">
+						<span class="contact-input-title-item">Comment</span>
+
+						<textarea
+							placeholder="Text input"
+							class="contact-form-message"
+							name="user-comment"
+							id=""
+							cols="30"
+							rows="10"
+						></textarea>
+					</label>
+					<input id="user-policy" name="user_policy" class="checkbox visually-hidden" type="checkbox" />
+					<label for="user-policy" class="contact-form-privicy">
+						I accept the terms and conditions of the
+						&nbsp;<a class="contact-form-link" href="./">Privacy Policy</a></label
+					>
+
+					<div class="contact-form-btn-wrapper">
+						<button type="submit" class="contact-form-btn">Send</button>
+					</div>
+				</form>
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
